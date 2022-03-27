@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="baidu-site-verification" content="093lY4ziMu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="A hexo theme">
+    <meta name="keyword"  content="dusign, hexo-theme-snail">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+    <title>
+        
+          OO HomeWork 1-3 - MyBlog
+        
+    </title>
+
+    <link rel="canonical" href="https://dusign.net/2022/03/25/OO-HomeWork-1-3/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS --> 
+    
+        
+<link rel="stylesheet" href="/css/dusign-light.css">
+
+        
+<link rel="stylesheet" href="/css/dusign-common-light.css">
+
+        
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+        
+<link rel="stylesheet" href="/css/toc.css">
+
+        <!-- background effects end -->
+    
+    
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/fonts.googleapis.css">
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- photography -->
+    
+<link rel="stylesheet" href="/css/photography.css">
+
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- background effects start -->
+    
+    <!-- background effects end -->
+
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('P0_bg.jpg')
+                /*post*/
+            
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#BUAA-OO" title="BUAA-OO">BUAA-OO</a>
+                            
+                        </div>
+                        <h1>OO HomeWork 1-3</h1>
+                        <h2 class="subheading">OO Work1</h2>
+                        <span class="meta">
+                            Posted by Sisyphus Blog on
+                            2022-03-25
+                        </span>
+
+                        
+                            <div class="blank_box"></div>
+                            <span class="meta">
+                                Words <span class="post-count">3.5k</span> and
+                                Reading Time <span class="post-count">15</span> Minutes
+                            </span>
+                            <div class="blank_box"></div>
+                            <!-- 不蒜子统计 start -->
+                            <span class="meta">
+                                Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+                            </span>
+                            <!-- 不蒜子统计 end -->
+                        
+
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    
+    <div class="waveWrapper">
+        <div class="wave wave_before" style="background-image: url('/img/wave-light.png')"></div>
+        <div class="wave wave_after" style="background-image: url('/img/wave-light.png')"></div>
+    </div>
+    
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sisyphus Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About Me</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                    <!-- 
+                    <li>
+                        <a href="YOUR_CHINESE_BLOG_URL" target="_blank">Chinese Blog</a>
+                    </li>
+                     -->
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="BUAA-OO-第一单元总结"><a href="#BUAA-OO-第一单元总结" class="headerlink" title="BUAA OO 第一单元总结"></a>BUAA OO 第一单元总结</h1><h2 id="第一次作业"><a href="#第一次作业" class="headerlink" title="第一次作业"></a>第一次作业</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>本次作业需要完成的任务为：读入一个包含加、减、乘、乘方以及括号（其中括号的深度至多为 1 层）的单变量表达式，输出恒等变形展开所有括号后的表达式。</p>
+<p>在本次作业中，展开所有括号的定义是：对原输入表达式 E 做恒等变形，得到新表达式 E’，且 E’中不含有字符 ‘(‘ 和 ‘)’ 。</p>
+<h3 id="UML-图与类结构"><a href="#UML-图与类结构" class="headerlink" title="UML 图与类结构"></a>UML 图与类结构</h3><p>类图如下</p>
+<p><img src="HW1.jpg" alt="HW1"></p>
+<p>其中，各个类的含义如下：<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">|- MainClass：主类</span><br><span class="line">|- expr (<span class="keyword">package</span>)：表达式包</span><br><span class="line">    |- Factor (implement)：因子类</span><br><span class="line">        |- Number：常数类</span><br><span class="line">        |- FactorX：变量类</span><br><span class="line">        |- Power：指数类</span><br><span class="line">        |- Term：项类</span><br><span class="line">        |- Expr：表达式类</span><br><span class="line">|- Parser：语法分析器</span><br><span class="line">|- Lexer：词法分析器</span><br><span class="line">|- ExprTerm：表达式最简项</span><br><span class="line">|- Calculate: 计算化简类</span><br></pre></td></tr></table></figure></p>
+<h3 id="设计理念"><a href="#设计理念" class="headerlink" title="设计理念"></a>设计理念</h3><p>使用了递归下降的方法解析表达式，为之后的各种嵌套打下基础。解析的同时生成后缀表达式，为之后的计算做好准备。<br>采用了边计算边化简的方法，这样可以显著的提升程序的速度。当计算结束后再化简一次，以保证表达式的最简，最后输出结果。</p>
+<h3 id="度量分析"><a href="#度量分析" class="headerlink" title="度量分析"></a>度量分析</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>OCavg</th>
+<th>OCmax</th>
+<th>WMC</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculate</td>
+<td>3.80</td>
+<td>10</td>
+<td>38</td>
+<td></td>
+</tr>
+<tr>
+<td>ExprTerm</td>
+<td>1.80</td>
+<td>3</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>Lexer</td>
+<td>3.75</td>
+<td>10</td>
+<td>15</td>
+<td></td>
+</tr>
+<tr>
+<td>MainClass</td>
+<td>1.00</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Parser</td>
+<td>2.40</td>
+<td>5</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Expr</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.FactorX</td>
+<td>1.00</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Number</td>
+<td>1.00</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Power</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Term</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>代码复杂度总体可以接受，但计算类的复杂度较高，因为此时还没有把化简的部分提取出来。<br>在第二次作业中，我把化简方法单独提取成了一个类，降低了计算类的复杂度。</p>
+<h3 id="方法圈复杂度分析"><a href="#方法圈复杂度分析" class="headerlink" title="方法圈复杂度分析"></a>方法圈复杂度分析</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>CogC</th>
+<th>ev(G)</th>
+<th>iv(G)</th>
+<th>v(G)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculate.Calculate(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.add(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.cal()</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Calculate.count(String)</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.cutStr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.mul(String, String)</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.pow(String, String)</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.printExpr(ExprTerm, StringBuilder)</td>
+<td>12</td>
+<td>1</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Calculate.sum(String)</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.toSimplify(String)</td>
+<td>15</td>
+<td>4</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>ExprTerm.ExprTerm(String, int)</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ExprTerm.compareTo(ExprTerm)</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ExprTerm.getCoes()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.getExps()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.setCoes(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.Lexer(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.getNumber()</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Lexer.next()</td>
+<td>19</td>
+<td>7</td>
+<td>6</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Lexer.peek()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MainClass.main(String[])</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Parser.Parser(Lexer)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Parser.parseExpr()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseFactor()</td>
+<td>12</td>
+<td>3</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Parser.parsePower()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseTerm()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>expr.Expr.Expr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.addTerm(Term)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.FactorX.FactorX(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.FactorX.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Number.Number(BigInteger)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Number.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.Power()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.addFactor(Factor)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.Term.Term()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Term.addPower(Power)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Term.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>大部分方法圈复杂度较低，在较为合理的范围内。</p>
+<h3 id="化简策略"><a href="#化简策略" class="headerlink" title="化简策略"></a>化简策略</h3><p>1.将x**2化简为x*x,减少一个字符<br>2.如果表达式第一项为负，将一个正的项提取到表达式的最前面。<br>3.合并同类项<br>4.合理省略了各种数为1的情况。</p>
+<h3 id="Bug分析"><a href="#Bug分析" class="headerlink" title="Bug分析"></a>Bug分析</h3><p>第一次作业强测互测自测都没有bug。</p>
+<h3 id="Hack策略"><a href="#Hack策略" class="headerlink" title="Hack策略"></a>Hack策略</h3><p>采用了随机生成数据与手动构造数据相结合的方法。<br>但因为第一次作业较为简单，最终只Hack到了一个bug。</p>
+<h3 id="架构分析"><a href="#架构分析" class="headerlink" title="架构分析"></a>架构分析</h3><p>主要参考了训练给出的递归下降的主体结构，通过词法分析器Lexer与语法分析器Parser解析表达式生成后缀表达式。而化简主要运用了正则表达式和捕获组，但面对第二次作业的嵌套时，正则表达式无法成功提取到项，只好在第二次作业对化简方法进行了重构。</p>
+<h3 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h3><p>学到了递归下降方法，并熟悉了正则表达式与捕获组的使用，replaceAll应该慎用，但有时使用可以让表达式的结构更加的规整，降低解析的难度。</p>
+<h2 id="第二次作业"><a href="#第二次作业" class="headerlink" title="第二次作业"></a>第二次作业</h2><h3 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h3><p>本次作业中需要完成的任务为：读入一系列自定义函数的定义以及一个包含简单幂函数、简单三角函数、简单自定义函数调用以及求和函数的表达式，输出恒等变形展开所有括号后的表达式。</p>
+<p>在本次作业中，展开所有括号的定义是：对原输入表达式 E 做恒等变形，得到新表达式 E’ 。其中，E’中不再含有自定义函数与求和函数，且只包含必要的括号。</p>
+<h3 id="UML-图与类结构-1"><a href="#UML-图与类结构-1" class="headerlink" title="UML 图与类结构"></a>UML 图与类结构</h3><p>类图如下</p>
+<p><img src="HW2.jpg" alt="HW2"></p>
+<p>其中，各个类的含义如下：<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">|- MainClass：主类</span><br><span class="line">|- expr (<span class="keyword">package</span>)：表达式包</span><br><span class="line">    |- Factor (<span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span>)：因子类</span></span><br><span class="line">        |- Number：常数类</span><br><span class="line">        |- SelfFun：自定义函数</span><br><span class="line">        |- SumFun：求和函数</span><br><span class="line">        |- TriFun：三角函数</span><br><span class="line">        |- VarX：变量类</span><br><span class="line">        |- Power：指数类</span><br><span class="line">        |- Term：项类</span><br><span class="line">        |- Expr：表达式类</span><br><span class="line">|- Parser：语法分析器</span><br><span class="line">|- Lexer：词法分析器</span><br><span class="line">|- ExprTerm：表达式最简项</span><br><span class="line">|- Calculate: 计算类</span><br><span class="line">|- Simplify: 同类项合并化简</span><br><span class="line">|- TriSimplify: 三角函数化简</span><br></pre></td></tr></table></figure></p>
+<h3 id="度量分析-1"><a href="#度量分析-1" class="headerlink" title="度量分析"></a>度量分析</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>OCavg</th>
+<th>OCmax</th>
+<th>WMC</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculate</td>
+<td>2.57</td>
+<td>8</td>
+<td>18</td>
+<td></td>
+</tr>
+<tr>
+<td>ExprTerm</td>
+<td>2.90</td>
+<td>8</td>
+<td>29</td>
+<td></td>
+</tr>
+<tr>
+<td>Lexer</td>
+<td>4.33</td>
+<td>14</td>
+<td>26</td>
+<td></td>
+</tr>
+<tr>
+<td>MainClass</td>
+<td>3.00</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>Parser</td>
+<td>2.86</td>
+<td>6</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>Simplify</td>
+<td>8.00</td>
+<td>12</td>
+<td>24</td>
+<td></td>
+</tr>
+<tr>
+<td>TriSimplify</td>
+<td>4.00</td>
+<td>10</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Expr</td>
+<td>1.75</td>
+<td>4</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Number</td>
+<td>1.00</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Power</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.SelfFun</td>
+<td>6.00</td>
+<td>16</td>
+<td>18</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.SumFun</td>
+<td>3.33</td>
+<td>6</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Term</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.TriFun</td>
+<td>1.00</td>
+<td>1</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.VarX</td>
+<td>1.00</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>大部分类的复杂度可以接受，但Simplify和expr.SelfFun复杂度较高。<br>Simplify是因为本身比较复杂，而expr.SelfFun是因为结构不太合理，实际代码其实并不复杂。</p>
+<h3 id="方法圈复杂度分析-1"><a href="#方法圈复杂度分析-1" class="headerlink" title="方法圈复杂度分析"></a>方法圈复杂度分析</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>CogC</th>
+<th>ev(G)</th>
+<th>iv(G)</th>
+<th>v(G)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculate.Calculate(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.add(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.cal()</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Calculate.cutStr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.mul(String, String)</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.pow(String, String)</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.triFunCal(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.ExprTerm(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.compareTo(ExprTerm)</td>
+<td>13</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>ExprTerm.countCos(String)</td>
+<td>8</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>ExprTerm.countSin(String)</td>
+<td>8</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>ExprTerm.countX(String)</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ExprTerm.createTerm(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.equals(Object)</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ExprTerm.getVarSorted()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.getVariate()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.hashCode()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.Lexer(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.getFuncStr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.getInput()</td>
+<td>6</td>
+<td>1</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Lexer.getNumber()</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Lexer.next()</td>
+<td>27</td>
+<td>7</td>
+<td>14</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Lexer.peek()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MainClass.main(String[])</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Parser.Parser(Lexer, HashMap<Character, String>)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Parser.createFunc(String)</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Parser.isFunc(String)</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseExpr()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseFactor()</td>
+<td>13</td>
+<td>5</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Parser.parsePower()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseTerm()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Simplify.printExpr(ExprTerm, StringBuilder, HashMap<ExprTerm, BigInteger>)</td>
+<td>25</td>
+<td>1</td>
+<td>10</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Simplify.sum(String)</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Simplify.toSimplify(String, int, String[])</td>
+<td>19</td>
+<td>3</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>TriSimplify.TriSimplify(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TriSimplify.strJudge(BigInteger, BigInteger, String[], String, String, String, String, …)</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TriSimplify.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TriSimplify.toTriSimplify()</td>
+<td>41</td>
+<td>8</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>expr.Expr.Expr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.addTerm(Term)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.setTriFunType(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.toString()</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>expr.Number.Number(BigInteger)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Number.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.Power()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.addFactor(Factor)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.SelfFun.SelfFun(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.SelfFun.createFun()</td>
+<td>20</td>
+<td>1</td>
+<td>10</td>
+<td>15</td>
+</tr>
+<tr>
+<td>expr.SelfFun.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.SumFun.SumFun(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.SumFun.createFun()</td>
+<td>11</td>
+<td>1</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>expr.SumFun.toString()</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.Term.Term()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Term.addPower(Power)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Term.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.TriFun.TriFun(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.TriFun.getType()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.TriFun.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.VarX.VarX(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.VarX.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>三角函数化简方法TriSimplify.toTriSimplify()本身十分复杂，所以复杂度较高。</p>
+<h3 id="化简策略-1"><a href="#化简策略-1" class="headerlink" title="化简策略"></a>化简策略</h3><p>除了第一次作业的化简外，添加了如下化简方式：<br>1.对于 sin(Term)**2 + cos(Term)** = 1 的化简，考虑到了所有的形式。<br>2.对于cos(0) = 1 的化简。<br>3.对于sin(0) = 0 的化简。</p>
+<h3 id="Bug分析-1"><a href="#Bug分析-1" class="headerlink" title="Bug分析"></a>Bug分析</h3><p>互测没有出现bug，因为bug出在函数调用上，互测无法测试函数。<br>强测出现了一个bug，我在解析自定义函数递归调用Lexer和Parser时没有递归的替换字符串，导致表达式结构解析错误，<br>使得对于自定义函数中的三角函数，在生成后缀表达式时将缺少一个负号，带来了惨痛的后果。<br>出现了bug的方法和未出现bug的方法在代码行和圈复杂度上并没有明显差异。</p>
+<h3 id="Hack策略-1"><a href="#Hack策略-1" class="headerlink" title="Hack策略"></a>Hack策略</h3><p>采用了随机生成数据与手动构造数据相结合的方法。<br>第二次作业相比于第一次作业复杂度提升了很多，所以测出了不少Bug。<br>分析同学代码发现 BUG 主要集中在对嵌套和各种函数的处理上。</p>
+<h3 id="架构分析-1"><a href="#架构分析-1" class="headerlink" title="架构分析"></a>架构分析</h3><p>相比于第一次，加入了SumFun,SelfFun和TriFUn三个因子，并将化简方法提取成了Simplify类。<br>增加了一个用于三角函数化简的TriSimplify类。</p>
+<h3 id="心得体会-1"><a href="#心得体会-1" class="headerlink" title="心得体会"></a>心得体会</h3><p>全面的测试非常重要。<br>笔者在课下较为全面的测试了各种情况，但在测试自定义函数时偷了懒，没有测试到带负号的三角函数，<br>最后导致了的毁灭性后果。</p>
+<h2 id="第三次作业"><a href="#第三次作业" class="headerlink" title="第三次作业"></a>第三次作业</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><p>本次作业中相比于第二次作业，增加了多种嵌套形式，其余相同。</p>
+<h3 id="UML-图与类结构-2"><a href="#UML-图与类结构-2" class="headerlink" title="UML 图与类结构"></a>UML 图与类结构</h3><p>类图如下</p>
+<p><img src="HW3.jpg" alt="HW3"></p>
+<p>其中，各个类的含义如下：<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">|- MainClass：主类</span><br><span class="line">|- expr (<span class="keyword">package</span>)：表达式包</span><br><span class="line">    |- Factor (<span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span>)：因子类</span></span><br><span class="line">        |- Number：常数类</span><br><span class="line">        |- SelfFun：自定义函数</span><br><span class="line">        |- SumFun：求和函数</span><br><span class="line">        |- TriFun：三角函数</span><br><span class="line">        |- VarX：变量类</span><br><span class="line">        |- Power：指数类</span><br><span class="line">        |- Term：项类</span><br><span class="line">        |- Expr：表达式类</span><br><span class="line">|- Parser：语法分析器</span><br><span class="line">|- Lexer：词法分析器</span><br><span class="line">|- ExprTerm：表达式最简项</span><br><span class="line">|- OverSplit：项与因子提取类</span><br><span class="line">|- Calculate: 计算类</span><br><span class="line">|- Simplify: 同类项合并化简</span><br></pre></td></tr></table></figure></p>
+<h3 id="度量分析-2"><a href="#度量分析-2" class="headerlink" title="度量分析"></a>度量分析</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>OCavg</th>
+<th>OCmax</th>
+<th>WMC</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculate</td>
+<td>3.57</td>
+<td>8</td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>ExprTerm</td>
+<td>2.29</td>
+<td>8</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td>Lexer</td>
+<td>4.33</td>
+<td>14</td>
+<td>26</td>
+<td></td>
+</tr>
+<tr>
+<td>MainClass</td>
+<td>3.00</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>OverSplit</td>
+<td>11.00</td>
+<td>16</td>
+<td>22</td>
+<td></td>
+</tr>
+<tr>
+<td>Parser</td>
+<td>2.86</td>
+<td>6</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>Simplify</td>
+<td>7.00</td>
+<td>11</td>
+<td>35</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Expr</td>
+<td>1.75</td>
+<td>4</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Number</td>
+<td>1.00</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Power</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.SelfFun</td>
+<td>4.40</td>
+<td>11</td>
+<td>22</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.SumFun</td>
+<td>3.67</td>
+<td>7</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.Term</td>
+<td>1.67</td>
+<td>3</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.TriFun</td>
+<td>1.00</td>
+<td>1</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>expr.VarX</td>
+<td>1.00</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>OverSplit类的OCavg值很高，可能是因为if分支较多导致。</p>
+<h3 id="方法圈复杂度分析-2"><a href="#方法圈复杂度分析-2" class="headerlink" title="方法圈复杂度分析"></a>方法圈复杂度分析</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>CogC</th>
+<th>ev(G)</th>
+<th>iv(G)</th>
+<th>v(G)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculate.Calculate(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.add(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.cal()</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Calculate.cutStr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Calculate.mul(String, String)</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.pow(String, String)</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Calculate.triFunCal(String, String)</td>
+<td>16</td>
+<td>6</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ExprTerm.ExprTerm(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.compareTo(ExprTerm)</td>
+<td>13</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>ExprTerm.createTerm(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.equals(Object)</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ExprTerm.getVarSorted()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.getVariate()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ExprTerm.hashCode()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.Lexer(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.getFuncStr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lexer.getInput()</td>
+<td>6</td>
+<td>1</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Lexer.getNumber()</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Lexer.next()</td>
+<td>27</td>
+<td>7</td>
+<td>14</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Lexer.peek()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MainClass.main(String[])</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>OverSplit.divideFactor(HashMap<String, Integer>, String)</td>
+<td>56</td>
+<td>7</td>
+<td>22</td>
+<td>25</td>
+</tr>
+<tr>
+<td>OverSplit.divideTerm(String)</td>
+<td>11</td>
+<td>1</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Parser.Parser(Lexer, HashMap<Character, String>)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Parser.createFunc(String)</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Parser.isFunc(String)</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseExpr()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseFactor()</td>
+<td>13</td>
+<td>5</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Parser.parsePower()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parser.parseTerm()</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Simplify.getExprTerm(String)</td>
+<td>9</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Simplify.getNumber(String, int)</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Simplify.printExpr(ExprTerm, StringBuilder, HashMap<ExprTerm, BigInteger>)</td>
+<td>25</td>
+<td>1</td>
+<td>10</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Simplify.sum(String)</td>
+<td>14</td>
+<td>2</td>
+<td>11</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Simplify.toSimplify(String)</td>
+<td>17</td>
+<td>3</td>
+<td>10</td>
+<td>11</td>
+</tr>
+<tr>
+<td>expr.Expr.Expr()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.addTerm(Term)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.setTriFunType(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Expr.toString()</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>expr.Number.Number(BigInteger)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Number.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.Power()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.addFactor(Factor)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Power.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.SelfFun.SelfFun(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.SelfFun.countLevel(int, int)</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.SelfFun.createFun()</td>
+<td>8</td>
+<td>1</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>expr.SelfFun.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.SelfFun.varCreate(StringBuilder[], int)</td>
+<td>16</td>
+<td>1</td>
+<td>10</td>
+<td>13</td>
+</tr>
+<tr>
+<td>expr.SumFun.SumFun(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.SumFun.createFun()</td>
+<td>13</td>
+<td>1</td>
+<td>9</td>
+<td>10</td>
+</tr>
+<tr>
+<td>expr.SumFun.toString()</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.Term.Term()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Term.addPower(Power)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.Term.toString()</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>expr.TriFun.TriFun(String, String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.TriFun.getType()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.TriFun.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.VarX.VarX(String)</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>expr.VarX.toString()</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>OverSplit.divideFactor方法因为if分支较多导致复杂度较高。</p>
+<h3 id="化简策略-2"><a href="#化简策略-2" class="headerlink" title="化简策略"></a>化简策略</h3><p>与第二次作业大致相同，但删去了对于 sin(Term)**2 + cos(Term)** = 1 的化简。</p>
+<h3 id="Bug分析-2"><a href="#Bug分析-2" class="headerlink" title="Bug分析"></a>Bug分析</h3><p>本次在互测中出现了一个bug，也是由于递归调用Lexer和Parser时字符串替换没有随之递归而导致的。<br>出现了bug的方法和未出现bug的方法在代码行和圈复杂度上并没有明显差异。</p>
+<h3 id="Hack策略-2"><a href="#Hack策略-2" class="headerlink" title="Hack策略"></a>Hack策略</h3><p>主要采用随机爆破的方式，同时手动构造了一些可能导致Format Error和爆int爆栈的数据。<br>Hack成果显著，很多同学考虑的并没有那么全面</p>
+<h3 id="架构分析-2"><a href="#架构分析-2" class="headerlink" title="架构分析"></a>架构分析</h3><p>第三次作业架构变化不大。<br>增加了一个OverSplit类用来代替之前使用的split方法，用以提取项和因子。<br>前两次作业使用的正则表达式不再适用，本次作业使用HashMap用于合并同类项。<br>其他部分大致与第二次作业一致。</p>
+<h3 id="心得体会-2"><a href="#心得体会-2" class="headerlink" title="心得体会"></a>心得体会</h3><p>代码架构的设计对于面向对象编程是非常重要的，好的架构能让编码事半功倍，反之亦然。</p>
+<h2 id="第一单元心得体会"><a href="#第一单元心得体会" class="headerlink" title="第一单元心得体会"></a>第一单元心得体会</h2><p>第一单元主要使我对于 Java 的了解更加深入了，对于某些方法更加的熟悉，并且了解了递归下降的方法。<br>在对于代码的不断重构中，我体会到了架构对于面对对象编程的重要性。<br>类的变量是状态，类的方法是行为，面对对象本身就是对自然世界的抽象表述，<br>而更加合理的类的划分与各种各样的设计模型，将是我之后学习的重点。</p>
+
+                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2021/12/18/Hello-Blog/" data-toggle="tooltip" data-placement="top" title="Hello MyBlog">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                <!-- tip start -->
+                
+
+                
+                <div class="comment_notes">
+                    <p>
+                        <!-- This is copyright. -->
+                    </p>
+                </div>
+                
+                <!-- tip end -->
+
+                <!-- Music start-->
+                
+                <!-- Music end -->
+
+                <!-- Sharing -->
+                <!--  -->
+                <!-- <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div> -->
+                <!--  css & js -->
+                <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+                <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script> -->
+                <!--  -->
+                <!-- Sharing -->
+
+                <!-- gitment start -->
+                
+                <!-- gitment end -->
+
+                <!-- 来必力City版安装代码 -->
+                
+                <!-- City版安装代码已完成 -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      
+        <aside id="sidebar">
+          <div id="toc" class="toc-article">
+          <strong class="toc-title">Contents</strong>
+          
+            
+              <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#BUAA-OO-第一单元总结"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">BUAA OO 第一单元总结</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第一次作业"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">第一次作业</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#简介"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#UML-图与类结构"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">UML 图与类结构</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#设计理念"><span class="toc-nav-number">1.1.3.</span> <span class="toc-nav-text">设计理念</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#度量分析"><span class="toc-nav-number">1.1.4.</span> <span class="toc-nav-text">度量分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#方法圈复杂度分析"><span class="toc-nav-number">1.1.5.</span> <span class="toc-nav-text">方法圈复杂度分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#化简策略"><span class="toc-nav-number">1.1.6.</span> <span class="toc-nav-text">化简策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Bug分析"><span class="toc-nav-number">1.1.7.</span> <span class="toc-nav-text">Bug分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Hack策略"><span class="toc-nav-number">1.1.8.</span> <span class="toc-nav-text">Hack策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#架构分析"><span class="toc-nav-number">1.1.9.</span> <span class="toc-nav-text">架构分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#心得体会"><span class="toc-nav-number">1.1.10.</span> <span class="toc-nav-text">心得体会</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第二次作业"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">第二次作业</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#简介-1"><span class="toc-nav-number">1.2.1.</span> <span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#UML-图与类结构-1"><span class="toc-nav-number">1.2.2.</span> <span class="toc-nav-text">UML 图与类结构</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#度量分析-1"><span class="toc-nav-number">1.2.3.</span> <span class="toc-nav-text">度量分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#方法圈复杂度分析-1"><span class="toc-nav-number">1.2.4.</span> <span class="toc-nav-text">方法圈复杂度分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#化简策略-1"><span class="toc-nav-number">1.2.5.</span> <span class="toc-nav-text">化简策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Bug分析-1"><span class="toc-nav-number">1.2.6.</span> <span class="toc-nav-text">Bug分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Hack策略-1"><span class="toc-nav-number">1.2.7.</span> <span class="toc-nav-text">Hack策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#架构分析-1"><span class="toc-nav-number">1.2.8.</span> <span class="toc-nav-text">架构分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#心得体会-1"><span class="toc-nav-number">1.2.9.</span> <span class="toc-nav-text">心得体会</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第三次作业"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">第三次作业</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#简介-2"><span class="toc-nav-number">1.3.1.</span> <span class="toc-nav-text">简介</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#UML-图与类结构-2"><span class="toc-nav-number">1.3.2.</span> <span class="toc-nav-text">UML 图与类结构</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#度量分析-2"><span class="toc-nav-number">1.3.3.</span> <span class="toc-nav-text">度量分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#方法圈复杂度分析-2"><span class="toc-nav-number">1.3.4.</span> <span class="toc-nav-text">方法圈复杂度分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#化简策略-2"><span class="toc-nav-number">1.3.5.</span> <span class="toc-nav-text">化简策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Bug分析-2"><span class="toc-nav-number">1.3.6.</span> <span class="toc-nav-text">Bug分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Hack策略-2"><span class="toc-nav-number">1.3.7.</span> <span class="toc-nav-text">Hack策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#架构分析-2"><span class="toc-nav-number">1.3.8.</span> <span class="toc-nav-text">架构分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#心得体会-2"><span class="toc-nav-number">1.3.9.</span> <span class="toc-nav-text">心得体会</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第一单元心得体会"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">第一单元心得体会</span></a></li></ol></li></ol>
+            
+          
+          </div>
+        </aside>
+      
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#BUAA-OO" title="BUAA-OO">BUAA-OO</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                <!-- 
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://master-tan.github.io/" target="_blank">Tan&#39;s Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Dusign&#39;s Web</a></li>
+                    
+                        <li><a href="https://github.com/dusign" target="_blank">Dusign&#39;s Github</a></li>
+                    
+                        <li><a href="#" target="_blank">Other</a></li>
+                    
+                </ul>
+                 -->
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+
+
+<style  type="text/css">
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/SisyphusDu">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Sisyphus Blog 2022 
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- Search -->
+
+<script src="/js/search.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://dusign.net/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Search -->
+
+    <script type="text/javascript">      
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+    var path = "/" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>
+
+
+<!-- busuanzi -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+
+    
+        <!-- background effects line -->
+        
+
+        
+
+        <!-- background effects end -->
+    
+
+    <!--<script size="50" alpha='0.3' zIndex="-999" src="/js/ribbonStatic.js"></script>-->
+    
+        <script src="/js/ribbonDynamic.js"></script>
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
